@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Control Presupuestos</title>
+    <!-- BOOTSTRAP 4 BOOTSWATCH LUX THEME -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+  
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+  </head>
+  <body>
+
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+      </div>
+    
+      <div class="container">
+       
+        <nav class="nav-main">
+
+      <div class="container">
+        <a class="navbar-brand" href="#"><h3><strong>Control Presupuestal</strong></h3></a>
+      </div>
+    </nav>
+      
+    <div class="container">
+        <div class="row my-5">
+          <div class="col-md-4">
+  
+            <div class="card">
+              <div class="card-body">
+                <!-- FORM TO ADD TASKS -->
+                <form id="formTask">
+                  <div class="form-group">
+
+                   
+                    <form action="../../form-result.php" target="_blank" >
+
+                      <p>
+                    
+                        Selecciona el tipo de entrada:<br>
+                    
+                        <input type="checkbox"  id="entrada" name="peliculas"> Ingresos<br>
+                    
+                        <input type="checkbox" id="entrada2" name="deportes"> Egresos<br>
+                    
+                      </p>
+                    
+                    </form>
+
+
+                          <input type="number" id="title" placeholder="Cantidad de dinero" class="form-control" >
+
+                          <input type="date" id="fecha"  name="fecha" step="1" min="2013-01-01" max="2022-12-31" value="2013-01-01">>
+                   
+                  </div>
+                  <div class="form-group">
+                    <textarea id="description" placeholder="Descripción" cols="40" rows="10" class="form-control"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-block">Añadir</button>
+                </form>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-8">
+            <div id="tasks"></div>
+          </div>
+        </div>
+      </div>
+      <script src="./app.js"></script>
+    </body>
+  
+</html>
